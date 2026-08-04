@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Multidisciplinary Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="logo" href="#top" aria-label="Home">
+        <span class="logo-mark"></span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary" data-nav-pill>
+        <div class="nav-pill">
+          <span class="nav-highlight" data-nav-highlight aria-hidden="true"></span>
+          <a href="#top" class="nav-item is-active" data-nav-item>HOME</a>
+          <a href="#projects" class="nav-item" data-nav-item>Works</a>
+          <a href="#process" class="nav-item" data-nav-item>Moving Image</a>
+          <a href="#process" class="nav-item" data-nav-item>Sketches</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn-contact" href="#contact">Contact me</a>
+        <span class="avatar" aria-hidden="true">
+          <img src="assets/imgEllipse1264.svg" alt="" />
+        </span>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          data-nav-toggle
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div
+      class="lang-switch"
+      role="group"
+      aria-label="Language"
+      data-lang-switch
+      data-active="en"
+    >
+      <span class="lang-switch-thumb" data-lang-thumb aria-hidden="true"></span>
+      <button
+        class="lang-option"
+        type="button"
+        data-lang="cn"
+        aria-pressed="false"
+      >
+        CN
+      </button>
+      <button
+        class="lang-option is-active"
+        type="button"
+        data-lang="en"
+        aria-pressed="true"
+      >
+        EN
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+      <a href="#top">HOME</a>
+      <a href="#projects">Works</a>
+      <a href="#process">Moving Image</a>
+      <a href="#process">Sketches</a>
+      <a href="#contact">Contact me</a>
+    </div>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero" data-hero>
+        <div class="hero-blobs" aria-hidden="true">
+          <div class="blob blob-a" data-hero-blob="circle"></div>
+          <div class="blob blob-b" data-hero-blob="secondary"></div>
+          <div class="blob blob-c" data-hero-blob="primary"></div>
+        </div>
+
+        <h1 class="hero-title" data-hero-title>
+          <span class="hero-line hero-line-1">
+            <img
+              class="hero-word hero-word-1"
+              src="assets/imgMultidisciplinary.svg"
+              alt="Multidisciplinary"
+            />
+          </span>
+          <span class="hero-line hero-line-2">
+            <img
+              class="hero-word hero-word-2"
+              src="assets/imgDesigner.svg"
+              alt="Designer"
+            />
+          </span>
+        </h1>
+
+        <div class="scroll-badge how-we-roll" data-scroll-badge>
+          <svg
+            class="scroll-ring roll-ring"
+            viewBox="0 0 150 150"
+            aria-hidden="true"
+          >
+            <defs>
+              <path
+                id="scrollCircle"
+                d="M75,75 m-62,0 a62,62 0 1,1 124,0 a62,62 0 1,1 -124,0"
+              />
+            </defs>
+            <text>
+              <textPath
+                href="#scrollCircle"
+                startOffset="0%"
+                textLength="389.56"
+                lengthAdjust="spacing"
+              >
+                HOW WE ROLL · HOW WE ROLL ·
+              </textPath>
+            </text>
+          </svg>
+          <span class="scroll-core roll-center" aria-hidden="true"></span>
+          <span class="scroll-arrow roll-arrow" aria-hidden="true">
+            <svg viewBox="0 0 34 50" fill="none">
+              <path
+                d="M17 6v32"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8 29l9 11 9-11"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <p class="hero-intro reveal-copy" data-reveal-copy>
+          Design breathes life into everyday life.<br />
+          UI, Web, Graphic &amp; Moving Image: multiple disciplines, one
+          vision.<br />
+          Let’s build work with lasting vitality.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects" id="projects">
+        <header class="section-head" data-scroll-ink>
+          <h2>Projects</h2>
+          <p>UI/UX/WEB/Grapgic Design</p>
+        </header>
+
+        <div class="project-grid">
+          <!-- left column -->
+          <div class="project-col project-col-left">
+            <article class="project-card" data-project-card>
+              <a class="project-thumb" href="#" aria-label="Project 1">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-0" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-0" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 1</h3>
+              <ul class="tags">
+                <li>UI/UX</li>
+                <li>Web</li>
+                <li>2024</li>
+              </ul>
+            </article>
+            <article class="project-card" data-project-card>
+              <a class="project-thumb tall" href="#" aria-label="Project 1">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-1" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-1" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 1</h3>
+              <ul class="tags">
+                <li>Brand</li>
+                <li>Motion</li>
+                <li>IP</li>
+              </ul>
+            </article>
+            <article class="project-card" data-project-card>
+              <a class="project-thumb" href="#" aria-label="Project 1">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-2" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-2" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 1</h3>
+              <ul class="tags">
+                <li>UI/UX</li>
+                <li>Research</li>
+                <li>App</li>
+              </ul>
+            </article>
+            <article class="project-card" data-project-card>
+              <a class="project-thumb wide" href="#" aria-label="Project 1">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-3" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-3" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 1</h3>
+              <ul class="tags">
+                <li>Graphic</li>
+                <li>Print</li>
+                <li>Identity</li>
+              </ul>
+            </article>
+            <article class="project-card" data-project-card>
+              <a class="project-thumb" href="#" aria-label="Project 1">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-4" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-4" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 1</h3>
+              <ul class="tags">
+                <li>Web</li>
+                <li>System</li>
+                <li>2025</li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- right column (offset) -->
+          <div class="project-col project-col-right">
+            <article class="project-card" data-project-card>
+              <a class="project-thumb tall" href="#" aria-label="Project 1">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-5" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-5" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 1</h3>
+              <ul class="tags">
+                <li>UI/UX</li>
+                <li>Prototype</li>
+                <li>Handoff</li>
+              </ul>
+            </article>
+            <article class="project-card" data-project-card>
+              <a class="project-thumb" href="#" aria-label="Project 2">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-6" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-6" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 2</h3>
+              <ul class="tags">
+                <li>Product</li>
+                <li>UI/UX</li>
+                <li>Motion</li>
+              </ul>
+            </article>
+            <article class="project-card" data-project-card>
+              <a class="project-thumb square" href="#" aria-label="Project 2">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-7" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-7" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 2</h3>
+              <ul class="tags">
+                <li>Brand</li>
+                <li>Web</li>
+                <li>Story</li>
+              </ul>
+            </article>
+            <article class="project-card" data-project-card>
+              <a class="project-thumb" href="#" aria-label="Project 2">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-8" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-8" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 2</h3>
+              <ul class="tags">
+                <li>Graphic</li>
+                <li>IP</li>
+                <li>Campaign</li>
+              </ul>
+            </article>
+            <article class="project-card" data-project-card>
+              <a class="project-thumb tall" href="#" aria-label="Project 2">
+                <span class="thumb-media"><span class="thumb-fill"></span></span>
+                <span class="showcase-cursor" aria-hidden="true">
+                  <svg class="showcase-ring" viewBox="0 0 220 220">
+                    <defs>
+                      <path id="showcaseCircle-9" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/>
+                    </defs>
+                    <text>
+                      <textPath href="#showcaseCircle-9" startOffset="0%" textLength="540.35" lengthAdjust="spacing">SHOW CASE · SHOW CASE · SHOW CASE ·</textPath>
+                    </text>
+                  </svg>
+                  <span class="showcase-flower">
+                    <svg viewBox="0 0 128 128" fill="#AFCDF8"><circle cx="64.00" cy="36.00" r="24"/><circle cx="78.00" cy="39.75" r="24"/><circle cx="88.25" cy="50.00" r="24"/><circle cx="92.00" cy="64.00" r="24"/><circle cx="88.25" cy="78.00" r="24"/><circle cx="78.00" cy="88.25" r="24"/><circle cx="64.00" cy="92.00" r="24"/><circle cx="50.00" cy="88.25" r="24"/><circle cx="39.75" cy="78.00" r="24"/><circle cx="36.00" cy="64.00" r="24"/><circle cx="39.75" cy="50.00" r="24"/><circle cx="50.00" cy="39.75" r="24"/><circle cx="64" cy="64" r="40"/></svg>
+                  </span>
+                  <span class="showcase-arrow-wrap">
+                    <svg viewBox="0 0 48 48" fill="none">
+                      <path d="M14 34 L34 14" stroke="#0D302A" stroke-width="3" stroke-linecap="round"/>
+                      <path d="M16 14 H34 V32" stroke="#0D302A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </span>
+                <span class="showcase-mobile" aria-hidden="true">↗</span>
+              </a>
+              <h3>PROJECT 2</h3>
+              <ul class="tags">
+                <li>Documentary</li>
+                <li>Edit</li>
+                <li>Motion</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="projects-cta" data-reveal>
+          <a class="btn-pill" href="#projects">
+            <span>All projects</span>
+          </a>
+          <a class="btn-arrow" href="#projects" aria-label="View all projects">
+            →
+          </a>
+        </div>
+      </section>
+
+      <!-- ZERO TO ONE -->
+      <section class="zero" id="zero">
+        <header class="section-head" data-scroll-ink>
+          <h2>Zero to One</h2>
+          <p>Design built from scratch, with full creative control.</p>
+        </header>
+
+        <div class="timeline" data-reveal data-timeline>
+          <div class="timeline-axis">
+            <span>week 177</span>
+            <span>week 178</span>
+            <span>week 179</span>
+            <span>week 180</span>
+            <span>week 181</span>
+            <span>week 182</span>
+            <span>week 183</span>
+            <span>week 184</span>
+            <span>week 185</span>
+          </div>
+          <div class="timeline-bars">
+            <div class="bar solid" style="--w: 72%; --l: 0%"></div>
+            <div class="bar solid short" style="--w: 38%; --l: 42%">
+              <span class="bar-glow"></span>
+            </div>
+            <div class="bar dashed" style="--w: 55%; --l: 18%"></div>
+            <div class="bar dashed" style="--w: 28%; --l: 58%"></div>
+            <div class="bar solid mid" style="--w: 48%; --l: 22%"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESIGN PROCESS -->
+      <section class="process" id="process">
+        <div class="process-stage" data-process>
+          <div class="process-card c1" data-float></div>
+          <div class="process-card c2" data-float></div>
+          <div class="process-card c3" data-float></div>
+          <div class="process-card c4" data-float></div>
+          <div class="process-card c5" data-float></div>
+          <h2 class="process-title" data-reveal>Design Process</h2>
+          <p class="process-label" data-reveal>Sketches</p>
+        </div>
+      </section>
+
+      <!-- CORE EXPERTISE -->
+      <section class="expertise" id="expertise">
+        <header class="section-head" data-scroll-ink>
+          <h2>Core Expertise</h2>
+          <p>
+            Design built from scratch — Design Capabilities &amp; Workplace
+            Competencies, with full creative control.
+          </p>
+        </header>
+
+        <div class="expertise-grid">
+          <article class="expertise-card" data-reveal>
+            <div class="expertise-visual pink">
+              <img src="assets/imgSubtract.svg" alt="" />
+            </div>
+            <div class="expertise-body">
+              <h3>Design Craft</h3>
+              <ul>
+                <li>UI/UX Design &amp; Interaction Design</li>
+                <li>Information Architecture &amp; User Flow Design</li>
+                <li>Design System Development</li>
+                <li>Brand Visual Identity &amp; Design Language</li>
+                <li>Graphic Design / IP Design / Motion Design</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-reveal>
+            <div class="expertise-visual plum">
+              <img src="assets/imgEllipse1286.svg" alt="" />
+              <img class="stack-2" src="assets/imgEllipse1287.svg" alt="" />
+            </div>
+            <div class="expertise-body">
+              <h3>Product Thinking</h3>
+              <ul>
+                <li>Product Analysis &amp; Experience Evaluation</li>
+                <li>User Research &amp; Feedback-driven Optimization</li>
+                <li>User Journey Mapping &amp; Flow Improvement</li>
+                <li>Innovative Feature Design</li>
+                <li>Design Validation &amp; Iterative Improvement</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-reveal>
+            <div class="expertise-visual blue">
+              <img src="assets/imgEllipse1280.svg" alt="" />
+            </div>
+            <div class="expertise-body">
+              <h3>Creative Integration &amp; Collaboration</h3>
+              <ul>
+                <li>Visual Storytelling &amp; Concept Development</li>
+                <li>AI-assisted Creative Exploration</li>
+                <li>Cross-functional Communication &amp; Collaboration</li>
+                <li>Rapid Learning and Adaptability Across New Fields</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <aside class="resume-banner" data-reveal>
+          <div class="resume-media" aria-hidden="true">
+            <div class="resume-thumb"></div>
+          </div>
+          <div class="resume-copy">
+            <p class="resume-label">RESUME</p>
+            <h3>Curious about my<br />design journey?</h3>
+            <p class="resume-desc">
+              Explore my resume to learn more about my background, design
+              experience, and the skills behind my work across UI/UX, visual
+              branding, and creative storytelling.
+            </p>
+            <a class="resume-cta" href="#contact">
+              <span class="resume-cta-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path
+                    d="M5 15 L15 5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M7 5 H15 V13"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span class="resume-cta-text">View Resume</span>
+            </a>
+          </div>
+          <div class="resume-orbs" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+        </aside>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="voices" id="voices">
+        <header class="section-head" data-scroll-ink>
+          <h2>Self-praise means little;<br />client voices mean more.</h2>
+        </header>
+
+        <div class="voices-slider" data-reveal data-voices>
+          <div class="voices-track">
+            <blockquote class="voice-card active">
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <p>
+                Elaine demonstrates outstanding comprehension and adaptability.
+                Within a single week, she fully grasped all product features and
+                core user pain points, paired with delicate, sharp insight into
+                the user experience of innovative functions. Modest and easy to
+                collaborate with, she handles workplace communication with care
+                and clarity.
+              </p>
+              <footer>— Mentor, Aeroband Internship</footer>
+            </blockquote>
+            <blockquote class="voice-card">
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <p>
+                The redesigned interface captures music’s free spirit with
+                trendy, modern colors and graphics. Innovative guitar functions
+                and their matching app layout are intuitive to find. Operations
+                are far clearer, cutting frequent customer support inquiries and
+                letting me stay immersed in playing with steady focus.
+              </p>
+              <footer>— Aeroband Smart Guitar User</footer>
+            </blockquote>
+          </div>
+          <div class="voices-nav">
+            <button type="button" data-voice-prev aria-label="Previous">
+              ←
+            </button>
+            <button type="button" data-voice-next aria-label="Next">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORIES + FOOTER -->
+      <section class="footer-block" id="contact">
+        <div class="category-row" data-category-row>
+          <a
+            class="category-card"
+            href="#projects"
+            style="--accent: #afcbf8"
+            data-category-card
+          >
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="6"
+                  y="8"
+                  width="36"
+                  height="28"
+                  rx="4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M6 16h36"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+                <circle cx="17" cy="12" r="1.5" fill="currentColor" />
+              </svg>
+            </span>
+            <span class="category-label">用户界面 / 用户体验</span>
+          </a>
+          <a
+            class="category-card"
+            href="#projects"
+            style="--accent: #c7b6f3"
+            data-category-card
+          >
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="16"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M8 24h32M24 8c4.5 4.8 7 10.2 7 16s-2.5 11.2-7 16c-4.5-4.8-7-10.2-7-16s2.5-11.2 7-16z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+              </svg>
+            </span>
+            <span class="category-label">网站</span>
+          </a>
+          <a
+            class="category-card"
+            href="#projects"
+            style="--accent: #f2a6dc"
+            data-category-card
+          >
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M14 34c0-8 6-14 14-14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="30" cy="16" r="6" stroke="currentColor" stroke-width="2" />
+                <path
+                  d="M12 36h24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span class="category-label">形象 / 平面设计</span>
+          </a>
+          <a
+            class="category-card"
+            href="#projects"
+            style="--accent: #f4da6d"
+            data-category-card
+          >
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M24 8l3.2 9.8H38l-8.4 6.1 3.2 9.8L24 27.6 15.2 33.7l3.2-9.8L10 17.8h10.8L24 8z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+            <span class="category-label">IP</span>
+          </a>
+          <a
+            class="category-card"
+            href="#projects"
+            style="--accent: #f0ad72"
+            data-category-card
+          >
+            <span class="category-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="8"
+                  y="12"
+                  width="32"
+                  height="24"
+                  rx="4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M20 20l10 6-10 6V20z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+            <span class="category-label">记录 / 动态影像</span>
+          </a>
+        </div>
+
+        <footer class="site-footer">
+          <div class="footer-main">
+            <div class="footer-intro" data-footer-copy>
+              <h2>Let’s create something meaningful.</h2>
+              <p>
+                I’m always open to new collaborations and curious ideas.<br />
+                Let's design with purpose and tell stories that leave a lasting
+                impact.
+              </p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer" data-footer-copy>
+              <a href="#top" class="footer-flip"
+                ><span class="flip-track"
+                  ><span>HOME</span><span aria-hidden="true">HOME</span></span
+                ></a
+              >
+              <a href="#projects" class="footer-flip"
+                ><span class="flip-track"
+                  ><span>Works</span
+                  ><span aria-hidden="true">Works</span></span
+                ></a
+              >
+              <a href="#process" class="footer-flip"
+                ><span class="flip-track"
+                  ><span>Moving Image</span
+                  ><span aria-hidden="true">Moving Image</span></span
+                ></a
+              >
+              <a href="#process" class="footer-flip"
+                ><span class="flip-track"
+                  ><span>Sketches</span
+                  ><span aria-hidden="true">Sketches</span></span
+                ></a
+              >
+              <a href="#expertise" class="footer-flip"
+                ><span class="flip-track"
+                  ><span>About Me</span
+                  ><span aria-hidden="true">About Me</span></span
+                ></a
+              >
+            </nav>
+            <div class="footer-contact" data-footer-copy>
+              <a class="footer-contact-link" href="mailto:13197407199@163.com">13197407199@163.com</a>
+              <a class="footer-contact-link" href="tel:13197407199">13197407199</a>
+              <a class="footer-contact-link resume-link" href="#">
+                View resume (PDF)
+                <span class="resume-arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-social" data-footer-social>
+            <a href="#" aria-label="Instagram" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect
+                  x="3"
+                  y="3"
+                  width="18"
+                  height="18"
+                  rx="5"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="4"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Behance" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M7.2 10.2c1.1 0 1.8-.6 1.8-1.5S8.2 7.3 7 7.3H3.8v2.9h3.4zm.1 4.8c1.3 0 2.1-.7 2.1-1.8s-.9-1.7-2.2-1.7H3.8v3.5h3.5zM11.2 5.5h5.2v1.4h-5.2V5.5zm1.2 7.7c0-2.4 1.7-4.1 4.2-4.1 2.4 0 4 1.6 4 3.9v.5h-5.9c.1 1.2.9 2 2.1 2 .9 0 1.6-.4 1.9-1.1l1.7.6c-.6 1.5-2 2.3-3.7 2.3-2.5 0-4.3-1.7-4.3-4.1zm5.9-1.1c-.2-1-.9-1.6-1.9-1.6-1.1 0-1.8.6-2 1.6h3.9zM3.8 5.5H7c2.2 0 3.6 1.1 3.6 2.9 0 1.2-.7 2.2-1.8 2.6 1.5.4 2.4 1.5 2.4 3.1 0 2.1-1.7 3.4-4.1 3.4H2.2V5.5h1.6z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Dribbble" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M7 8.5c2.8 0 6.2.4 9.2 2.4M6.2 13.8c2.4-.8 5.2-1 8.4-.2M14.8 5.8c1.2 2.6 2 6 1.8 9.8"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M6.4 9.2H3.8V20h2.6V9.2zM5.1 4.2a1.6 1.6 0 100 3.2 1.6 1.6 0 000-3.2zM20.2 13.1c0-2.9-1.6-4.2-3.7-4.2-1.7 0-2.5.9-2.9 1.6V9.2h-2.6c0 .7 0 10.8 0 10.8h2.6v-6c0-.3 0-.6.1-.8.3-.6.9-1.3 1.9-1.3 1.3 0 1.9 1 1.9 2.5V20h2.7v-6.9z"
+                />
+              </svg>
+            </a>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
