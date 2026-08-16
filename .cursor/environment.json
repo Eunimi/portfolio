@@ -1,0 +1,9 @@
+{
+  "name": "Portfolio",
+  "terminals": [
+    {
+      "name": "web",
+      "command": "python3 -m http.server 8765"
+    }
+  ]
+}
