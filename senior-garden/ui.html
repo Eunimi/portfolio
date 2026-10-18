@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乐龄共园 · 手机交互 UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/ui.css" />
+  </head>
+  <body>
+    <a class="back-link" href="./index.html">← 返回项目</a>
+
+    <header class="ui-head">
+      <div class="kicker">GROW TOGETHER · 手机交互</div>
+      <h1>老人全程只需简单点一下的手机 UI</h1>
+      <p>
+        为「低龄活力老人」设计：大字号、强对比、一屏一任务、语音优先、超大点击区、容错兜底。手机不是负担，而是把种植站、社区、子女连起来的"一个按钮"。
+      </p>
+      <div class="principles">
+        <span>正文 ≥ 20px</span>
+        <span>按钮 ≥ 72px 高</span>
+        <span>一屏一任务</span>
+        <span>语音可读</span>
+        <span>高对比</span>
+        <span>一键呼叫兜底</span>
+      </div>
+    </header>
+
+    <section class="phones">
+      <!-- 1. 今日首页 -->
+      <div class="phone-wrap">
+        <div class="phone-label">① 今日首页<small>一眼看懂今天要做什么</small></div>
+        <div class="phone">
+          <div class="screen">
+            <div class="statusbar"><span>9:41</span><span class="dots"></span></div>
+            <div class="app-head">
+              <div class="big">王阿姨，早上好</div>
+              <div class="sub">今天适合去菜园走走 🌤</div>
+            </div>
+            <div class="screen-body">
+              <div class="card green">
+                <div class="weather">
+                  <div class="temp">21°</div>
+                  <div class="wtext">晴 · 微风<br />菜园很舒服</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="plot">
+                  <div class="thumb">🥬</div>
+                  <div class="meta">
+                    我的菠菜
+                    <small>需要浇水 · 第 25 周</small>
+                  </div>
+                </div>
+              </div>
+              <button class="big-btn"><span class="ico">🌱</span>去照料</button>
+              <button class="big-btn call-btn">
+                <span class="ico">📞</span>一键呼叫
+              </button>
+            </div>
+            <div class="tabbar">
+              <div class="tab active"><span class="t-ico">🏠</span>今日</div>
+              <div class="tab"><span class="t-ico">🌿</span>菜地</div>
+              <div class="tab"><span class="t-ico">👛</span>收获</div>
+              <div class="tab"><span class="t-ico">👥</span>社区</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. 调节种植台 -->
+      <div class="phone-wrap">
+        <div class="phone-label">
+          ② 调节种植台<small>把实体种植站降到舒服的高度</small>
+        </div>
+        <div class="phone">
+          <div class="screen">
+            <div class="statusbar"><span>9:41</span><span class="dots"></span></div>
+            <div class="app-head">
+              <div class="big">调节种植台</div>
+              <div class="sub">靠近时会自动降台，也可手动</div>
+            </div>
+            <div class="screen-body">
+              <div class="card sage">
+                <div class="height-display">
+                  <span class="val">72</span><span class="unit"> cm</span>
+                  <div class="hint">当前就座高度 · 不用弯腰</div>
+                </div>
+              </div>
+              <div class="stepper">
+                <button aria-label="降低">－</button>
+                <button aria-label="升高">＋</button>
+              </div>
+              <div class="presets">
+                <button class="preset">
+                  站立使用 <span class="tag">95 cm</span>
+                </button>
+                <button class="preset active">
+                  就座使用 <span class="tag">72 cm ✓</span>
+                </button>
+                <button class="preset">
+                  轮椅使用 <span class="tag">66 cm</span>
+                </button>
+              </div>
+            </div>
+            <div class="tabbar">
+              <div class="tab"><span class="t-ico">🏠</span>今日</div>
+              <div class="tab active"><span class="t-ico">🌿</span>菜地</div>
+              <div class="tab"><span class="t-ico">👛</span>收获</div>
+              <div class="tab"><span class="t-ico">👥</span>社区</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. 今日照料任务 -->
+      <div class="phone-wrap">
+        <div class="phone-label">③ 今日照料<small>一次只做一件事</small></div>
+        <div class="phone">
+          <div class="screen">
+            <div class="statusbar"><span>9:41</span><span class="dots"></span></div>
+            <div class="app-head">
+              <div class="big">今天只有一件事</div>
+              <div class="sub">做完就可以休息啦</div>
+            </div>
+            <div class="screen-body">
+              <div class="card task-card">
+                <div class="ico-big">💧</div>
+                <div class="task-title">给菠菜浇水</div>
+                <div class="task-sub">大约 0.5 升 · 浇到土变深色</div>
+                <div class="voice-row"><span>🔊</span>点这里听语音</div>
+              </div>
+              <button class="big-btn"><span class="ico">✓</span>完成了</button>
+              <button class="big-btn outline">
+                <span class="ico">🧑‍🌾</span>请人帮我
+              </button>
+            </div>
+            <div class="tabbar">
+              <div class="tab"><span class="t-ico">🏠</span>今日</div>
+              <div class="tab active"><span class="t-ico">🌿</span>菜地</div>
+              <div class="tab"><span class="t-ico">👛</span>收获</div>
+              <div class="tab"><span class="t-ico">👥</span>社区</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. 社区 / 约伴 -->
+      <div class="phone-wrap">
+        <div class="phone-label">
+          ④ 社区约伴<small>邻里 + 代际协作，重活有人帮</small>
+        </div>
+        <div class="phone">
+          <div class="screen">
+            <div class="statusbar"><span>9:41</span><span class="dots"></span></div>
+            <div class="app-head">
+              <div class="big">菜园里的人</div>
+              <div class="sub">现在有 3 位邻居在</div>
+            </div>
+            <div class="screen-body">
+              <div class="card">
+                <div class="neighbor">
+                  <div class="avatar">👵</div>
+                  <div class="nm">李阿姨<small>在 3 号菜池</small></div>
+                  <button class="pill-btn">打招呼</button>
+                </div>
+                <div class="neighbor">
+                  <div class="avatar">👴</div>
+                  <div class="nm">老张<small>在工具墙</small></div>
+                  <button class="pill-btn">打招呼</button>
+                </div>
+                <div class="neighbor">
+                  <div class="avatar b">🧑</div>
+                  <div class="nm">
+                    小陈 · 志愿者<small>可帮忙搬运 / 教手机</small>
+                  </div>
+                  <button class="pill-btn">求帮忙</button>
+                </div>
+              </div>
+              <button class="big-btn outline">
+                <span class="ico">👋</span>约大家一起
+              </button>
+            </div>
+            <div class="tabbar">
+              <div class="tab"><span class="t-ico">🏠</span>今日</div>
+              <div class="tab"><span class="t-ico">🌿</span>菜地</div>
+              <div class="tab"><span class="t-ico">👛</span>收获</div>
+              <div class="tab active"><span class="t-ico">👥</span>社区</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. 我的收获 -->
+      <div class="phone-wrap">
+        <div class="phone-label">
+          ⑤ 我的收获<small>成就感 + 轻量积分兑换</small>
+        </div>
+        <div class="phone">
+          <div class="screen">
+            <div class="statusbar"><span>9:41</span><span class="dots"></span></div>
+            <div class="app-head">
+              <div class="big">这周真棒 🎉</div>
+              <div class="sub">你把菜园照顾得很好</div>
+            </div>
+            <div class="screen-body">
+              <div class="stat-row">
+                <div class="stat"><div class="n">3</div><div class="l">本周照料</div></div>
+                <div class="stat"><div class="n">1<small>把</small></div><div class="l">收获生菜</div></div>
+                <div class="stat"><div class="n">655</div><div class="l">共园积分</div></div>
+              </div>
+              <div class="card sage">
+                <div class="reward">
+                  <div class="r-ico">🥬</div>
+                  <div class="r-text">
+                    可兑换：一袋有机菜苗
+                    <small>用 300 积分，去交易站领</small>
+                  </div>
+                </div>
+              </div>
+              <button class="big-btn"><span class="ico">🎁</span>去兑换</button>
+              <button class="big-btn outline">
+                <span class="ico">👨‍👩‍👧</span>把照片发给子女
+              </button>
+            </div>
+            <div class="tabbar">
+              <div class="tab"><span class="t-ico">🏠</span>今日</div>
+              <div class="tab"><span class="t-ico">🌿</span>菜地</div>
+              <div class="tab active"><span class="t-ico">👛</span>收获</div>
+              <div class="tab"><span class="t-ico">👥</span>社区</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="footnote">
+      交互主线：靠近种植站自动降台 → 手机确认"一件事" → 完成 / 一键求助 →
+      邻里约伴 → 收获与子女分享。全程最多两步，复杂操作由系统、志愿者或子女端兜底。
+    </p>
+  </body>
+</html>
