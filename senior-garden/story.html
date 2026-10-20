@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乐龄共园 · 连环动画 · 滚动叙事</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/story.css" />
+  </head>
+  <body>
+    <!-- fixed 3D stage -->
+    <div id="stage">
+      <canvas id="scene"></canvas>
+      <div class="scene-fade" data-fade></div>
+      <div class="loading" data-loading>正在装配场景…</div>
+
+      <!-- physics / formula floating cards (shown per act) -->
+      <div class="phys-card" data-phys="lift">
+        <div class="phys-title">电动推杆 · 丝杠原理</div>
+        <div class="phys-formula">F ≈ 2π · η · T ⁄ L</div>
+        <div class="phys-note">
+          电机扭矩 T 经丝杠（导程 L、效率 η）转成直线推力 F。小扭矩即可顶起重载台面；梯形丝杠自锁，断电不下滑。
+        </div>
+      </div>
+      <div class="phys-card" data-phys="reach">
+        <div class="phys-title">人因 · 舒适可及域</div>
+        <div class="phys-formula">r ≈ 45 cm</div>
+        <div class="phys-note">
+          就座时以肩为圆心、半径约 45cm 的扇形是"不用弯腰就能够到"的区域。C 型开口把整片种植区收进这个半径内。
+        </div>
+      </div>
+      <div class="phys-card" data-phys="stable">
+        <div class="phys-title">结构 · 重心与防倾覆</div>
+        <div class="phys-formula">CoG ∈ 底座轮廓</div>
+        <div class="phys-note">
+          悬臂槽体 + 坐着的人重量偏向一侧。宽盘底座 + 隐藏配重把合重心垂线始终压在支撑面内——只要不越界就不会翻。
+        </div>
+      </div>
+    </div>
+
+    <!-- scroll track: one section per 幕 -->
+    <main id="track">
+      <section class="act" data-act="0">
+        <div class="panel panel-center">
+          <div class="kicker">连环动画 · 向下滚动观看</div>
+          <h1>乐龄共园</h1>
+          <div class="en">GROW TOGETHER</div>
+          <p>
+            退休后的清晨，王阿姨来到社区共享菜园。这里有一件为她而生的"种菜家具"——家具般温暖，又藏着工业与科技的巧思。
+          </p>
+          <div class="scroll-hint">▼ 滚动，一幕一幕看下去</div>
+        </div>
+      </section>
+
+      <section class="act" data-act="1">
+        <div class="panel">
+          <span class="act-no">第一幕</span>
+          <h2>弯不下的腰</h2>
+          <p>
+            传统菜畦又低又远。弯腰、下蹲、蹲久了起不来——这是把老人挡在园艺之外的第一道坎。
+          </p>
+          <p class="aside">弯腰 90° 时腰椎负荷可达站立时的数倍，膝关节也吃不消。</p>
+        </div>
+      </section>
+
+      <section class="act" data-act="2">
+        <div class="panel">
+          <span class="act-no">第二幕</span>
+          <h2>让台面来找人</h2>
+          <p>
+            种植站识别到她坐下，台面自动降到就座高度。秘密在立柱里——一根电动丝杠。
+          </p>
+          <p class="aside">台面高度 62–100cm 连续可调；站立 / 就座 / 轮椅三档一键切换。</p>
+        </div>
+      </section>
+
+      <section class="act" data-act="3">
+        <div class="panel">
+          <span class="act-no">第三幕</span>
+          <h2>坐着就够得到</h2>
+          <p>
+            马蹄形的开口让双腿探进台下，坐着就能够到槽体中心——全程零弯腰、零下蹲。
+          </p>
+          <p class="aside">种植区被收进就座可及的扇形半径内，这是最朴素也最关键的人因创新。</p>
+        </div>
+      </section>
+
+      <section class="act" data-act="4">
+        <div class="panel">
+          <span class="act-no">第四幕</span>
+          <h2>稳稳托住</h2>
+          <p>
+            悬臂的槽体加上坐着的人，重量都偏向一侧，会不会翻？宽盘底座与隐藏配重给出了答案。
+          </p>
+          <p class="aside">只要合重心的垂线落在底座轮廓内就不倾覆；三点可调地脚再补一道稳定裕度。</p>
+        </div>
+      </section>
+
+      <section class="act" data-act="5">
+        <div class="panel">
+          <span class="act-no">第五幕</span>
+          <h2>一面会生长的墙</h2>
+          <p>
+            旁边的垂直绿化墙由卡扣模块拼成，居民每季投票轮换。邻里与年轻志愿者在这里相遇，重活有人搭手。
+          </p>
+          <p class="aside">滴灌靠重力与毛细省水；模块可拆卸轮换，低维护、常新鲜。</p>
+        </div>
+      </section>
+
+      <section class="act" data-act="6">
+        <div class="panel panel-center">
+          <span class="act-no">尾声</span>
+          <h2>手机只需一下</h2>
+          <p>
+            复杂的事交给系统与子女。老人只需在手机上点一下，或按下扶手上的大按钮。
+          </p>
+          <div class="end-cta">
+            <a class="cta" href="./ui.html">查看手机交互 UI →</a>
+            <a class="cta ghost" href="./model.html">自由查看 3D 模型 →</a>
+            <a class="cta ghost" href="./index.html">返回项目总览</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- progress rail -->
+    <nav class="rail" data-rail aria-label="章节">
+      <button data-go="0" title="序幕"><span></span></button>
+      <button data-go="1" title="第一幕"><span></span></button>
+      <button data-go="2" title="第二幕"><span></span></button>
+      <button data-go="3" title="第三幕"><span></span></button>
+      <button data-go="4" title="第四幕"><span></span></button>
+      <button data-go="5" title="第五幕"><span></span></button>
+      <button data-go="6" title="尾声"><span></span></button>
+    </nav>
+
+    <script type="importmap">
+      { "imports": { "three": "./vendor/three.module.js" } }
+    </script>
+    <script type="module" src="./js/story.js"></script>
+  </body>
+</html>
