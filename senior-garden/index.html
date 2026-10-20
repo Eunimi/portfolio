@@ -30,25 +30,30 @@
           <span>AI 为辅</span>
         </div>
         <div class="cta-row" style="justify-content: center">
-          <a class="cta" href="./model.html">▶ 打开 3D 模型演示</a>
+          <a class="cta" href="./story.html">▶ 打开连环动画（滚动叙事）</a>
           <a class="cta ghost" href="./ui.html">查看手机交互 UI</a>
+          <a class="cta ghost" href="./model.html">自由查看 3D 模型</a>
         </div>
       </div>
     </header>
 
     <main class="wrap">
-      <!-- 3D DEMO -->
-      <section class="section" id="demo">
-        <h2>一、3D 模型演示动画</h2>
+      <!-- STORY / 连环动画 -->
+      <section class="section" id="story">
+        <h2>一、连环动画 · 滚动叙事</h2>
         <p class="sec-sub">
-          可拖拽旋转 / 缩放。点"播放演示"看完整机构动作：老人靠近 → 自动降台 →
-          就座照料 → 代际加入 → 模块轮换。
+          点进去向下滚动，3D 相机一幕一幕带你看完整故事：弯腰之痛 → 升降原理 →
+          就座可及 → 防倾覆 → 社区共建 → 手机一下。每一幕讲清一个物理 / 人因原理。
         </p>
-        <div class="embed">
-          <iframe src="./model.html?embed=1" title="乐龄共园 3D 模型演示" loading="lazy"></iframe>
+        <div class="render-grid">
+          <figure><img src="./scenes/scene-hero.png" alt="序幕" /><figcaption>序幕 · 种菜家具</figcaption></figure>
+          <figure><img src="./scenes/scene-lift.png" alt="升降原理" /><figcaption>第二幕 · 升降丝杠原理</figcaption></figure>
+          <figure><img src="./scenes/scene-reach.png" alt="可及域" /><figcaption>第三幕 · 就座可及域</figcaption></figure>
+          <figure><img src="./scenes/scene-stable.png" alt="防倾覆" /><figcaption>第四幕 · 重心与防倾覆</figcaption></figure>
         </div>
         <div class="cta-row">
-          <a class="cta" href="./model.html" target="_blank">全屏打开演示 ↗</a>
+          <a class="cta" href="./story.html" target="_blank">▶ 打开连环动画 ↗</a>
+          <a class="cta ghost" href="./model.html" target="_blank">自由旋转查看模型 ↗</a>
         </div>
       </section>
 
@@ -112,28 +117,20 @@
         </div>
       </section>
 
-      <!-- RENDERS -->
+      <!-- STORY STILLS: pain -> community -->
       <section class="section" id="renders">
-        <h2>三、模型渲染图</h2>
+        <h2>三、从痛点到社区</h2>
         <p class="sec-sub">
-          由同一 3D 模型在"纯净渲染模式"下多角度导出，与演示动画完全对应。
+          连环动画里的两幕定格：被低矮菜畦挡在园艺之外的"弯腰之痛"，与种植站落位后的社区共建场景。
         </p>
         <div class="render-grid">
           <figure>
-            <img src="./renders/render-persp.png" alt="透视渲染图" />
-            <figcaption>透视 · 产品全貌（就座高度）</figcaption>
+            <img src="./scenes/scene-problem.png" alt="弯腰之痛" />
+            <figcaption>第一幕 · 弯不下的腰</figcaption>
           </figure>
           <figure>
-            <img src="./renders/render-ergo.png" alt="人机工程视角渲染图" />
-            <figcaption>人机工程 · 老人就座照料</figcaption>
-          </figure>
-          <figure>
-            <img src="./renders/render-front.png" alt="正视渲染图" />
-            <figcaption>正视 · C 型槽与扶手</figcaption>
-          </figure>
-          <figure>
-            <img src="./renders/render-top.png" alt="俯视渲染图" />
-            <figcaption>俯视 · 马蹄形开口与种植区</figcaption>
+            <img src="./scenes/scene-community.png" alt="社区共建" />
+            <figcaption>第五幕 · 一面会生长的墙 / 代际共建</figcaption>
           </figure>
         </div>
       </section>
