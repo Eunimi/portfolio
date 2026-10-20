@@ -1,0 +1,265 @@
+:root {
+  --ink: #22312b;
+  --ink-soft: #4f6058;
+  --paper: #f4efe4;
+  --green: #2f6b4f;
+  --green-deep: #1f4a37;
+  --sage: #7fa06a;
+  --coral: #e8744f;
+  --tech: #37b6c0;
+  --panel-bg: rgba(248, 245, 236, 0.9);
+  --shadow: 0 24px 50px -22px rgba(31, 74, 55, 0.55);
+  font-family: "Noto Sans SC", system-ui, -apple-system, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #cdd8dd;
+}
+
+/* fixed 3D stage behind the scrolling text */
+#stage {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+#scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.scene-fade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: #0f1a16;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-deep);
+  font-size: 16px;
+  background: var(--paper);
+  z-index: 3;
+}
+
+/* physics floating cards */
+.phys-card {
+  position: absolute;
+  right: 5vw;
+  top: 24vh;
+  width: 300px;
+  max-width: 78vw;
+  background: rgba(16, 26, 22, 0.86);
+  color: #eef3ee;
+  border: 1px solid rgba(55, 182, 192, 0.5);
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+  backdrop-filter: blur(6px);
+}
+.phys-card.on {
+  opacity: 1;
+  transform: translateY(0);
+}
+.phys-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--tech);
+}
+.phys-formula {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 10px 0 10px;
+  letter-spacing: 0.02em;
+}
+.phys-note {
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: #d4ddd6;
+}
+
+/* scroll track + panels */
+#track {
+  position: relative;
+  z-index: 1;
+}
+.act {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 7vw;
+}
+.panel {
+  max-width: 440px;
+  background: var(--panel-bg);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px 32px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.panel.on {
+  opacity: 1;
+  transform: translateY(0);
+}
+.panel-center {
+  margin: 0 auto;
+  text-align: center;
+}
+.act-no {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--coral);
+  margin-bottom: 10px;
+}
+.kicker {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--coral);
+}
+.panel h1 {
+  font-size: clamp(44px, 8vw, 84px);
+  line-height: 1;
+  color: var(--green-deep);
+  margin: 14px 0 6px;
+  font-weight: 900;
+}
+.panel .en {
+  font-size: 15px;
+  letter-spacing: 0.4em;
+  color: var(--sage);
+  font-weight: 700;
+}
+.panel h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.1;
+  color: var(--green-deep);
+  margin: 0 0 14px;
+  font-weight: 900;
+}
+.panel p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+.panel p.aside {
+  font-size: 14px;
+  color: var(--ink-soft);
+  border-left: 3px solid var(--sage);
+  padding-left: 12px;
+  margin-top: 16px;
+}
+.panel p:last-child {
+  margin-bottom: 0;
+}
+.scroll-hint {
+  margin-top: 26px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  animation: bob 1.8s ease-in-out infinite;
+}
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+.end-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+  align-items: center;
+}
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 13px 24px;
+  border-radius: 12px;
+  background: var(--green-deep);
+  color: #fff;
+  border: 1px solid var(--green-deep);
+  transition: transform 0.15s ease;
+  min-width: 230px;
+  justify-content: center;
+}
+.cta.ghost {
+  background: #fff;
+  color: var(--green-deep);
+}
+.cta:hover {
+  transform: translateY(-2px);
+}
+
+/* progress rail */
+.rail {
+  position: fixed;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.rail button {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.rail button span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(31, 74, 55, 0.28);
+  border: 2px solid transparent;
+  transition: all 0.25s ease;
+}
+.rail button.active span {
+  background: var(--coral);
+  transform: scale(1.5);
+  box-shadow: 0 0 0 3px rgba(232, 116, 79, 0.25);
+}
+
+@media (max-width: 640px) {
+  .phys-card {
+    right: 4vw;
+    left: 4vw;
+    width: auto;
+    top: auto;
+    bottom: 16vh;
+  }
+  .rail {
+    right: 10px;
+  }
+}

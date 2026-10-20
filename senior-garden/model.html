@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乐龄共园 · 可升降模块化种植站 — 3D 演示</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/project.css" />
+  </head>
+  <body class="model-page">
+    <div id="scene-root">
+      <canvas id="scene"></canvas>
+      <div id="annotations" class="annotations"></div>
+
+      <header class="scene-topbar" data-ui>
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <div class="brand-text">
+            <strong>乐龄共园 GROW&nbsp;TOGETHER</strong>
+            <small>可升降模块化种植站 · Height-Adaptive Modular Planting Station</small>
+          </div>
+        </div>
+        <div class="phase-pill" data-ui><span data-phase-label>就座照料</span></div>
+      </header>
+
+      <div class="scene-caption" data-ui data-caption>
+        老人靠近 → 种植站自动降到就座高度 → 免弯腰照料 → 邻里 / 青年加入
+      </div>
+
+      <div class="scene-controls" data-ui>
+        <div class="ctl-group">
+          <button class="btn btn-primary" data-act="play">▶ 播放演示</button>
+          <button class="btn" data-act="pause">⏸ 暂停</button>
+        </div>
+        <div class="ctl-group">
+          <span class="ctl-label">视图</span>
+          <button class="btn" data-view="persp">透视</button>
+          <button class="btn" data-view="front">正视</button>
+          <button class="btn" data-view="side">侧视</button>
+          <button class="btn" data-view="top">俯视</button>
+          <button class="btn" data-view="ergo">人机工程</button>
+        </div>
+        <div class="ctl-group">
+          <span class="ctl-label">种植台</span>
+          <button class="btn" data-act="raise">▲ 升</button>
+          <button class="btn" data-act="lower">▼ 降</button>
+          <span class="ctl-readout" data-height-readout>台面 72 cm</span>
+        </div>
+        <div class="ctl-group">
+          <button class="btn" data-act="labels">标注 开/关</button>
+          <button class="btn" data-act="pure">纯净渲染</button>
+          <button class="btn" data-act="shot">⤓ 导出渲染图</button>
+        </div>
+      </div>
+
+      <div class="loading" data-loading>正在装配 3D 模型…</div>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="./js/scene.js"></script>
+  </body>
+</html>
